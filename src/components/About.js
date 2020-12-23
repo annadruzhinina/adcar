@@ -2,9 +2,8 @@ import React, {Component} from 'react';
 
 import {ABOUT_CONTENT} from "../core/constants";
 
-import '../styles/typography/text-center.scss'
 import '../styles/section.scss'
-import '../styles/components/card/card-about.scss'
+import '../styles/components/about.scss'
 
 import DeleteAlertIcon from "mdi-react/DeleteAlertIcon";
 import DeleteCircleIcon from "mdi-react/DeleteCircleIcon";
@@ -29,7 +28,7 @@ class About extends Component {
       return {__html: this.state.description};
     }
     return (
-      <section className="ad-section ad-text-center">
+      <section className="ad-section ad-about">
         <div className="ad-section_container">
           <h3 className='ad-section_title'>
             {this.state.title}
@@ -37,11 +36,11 @@ class About extends Component {
           <p className="ad-section_subtitle"
              dangerouslySetInnerHTML={createDescription()}>
           </p>
-          <div className="ad-card-about_grid">
+          <div className="ad-about_grid">
             {this.state.data.map((card, index) => {
               return (
-                <div key={index} className="ad-card-about">
-                  <div className="ad-card-about_icon">
+                <div key={index} className="ad-about_card">
+                  <div className="ad-about_card-icon">
                     {card.icon === 'type1' && <DirectionsCarIcon/>}
                     {card.icon === 'type2' && <DeleteAlertIcon/>}
                     {card.icon === 'type3' && <DirectionsCarIcon/>}
@@ -49,7 +48,7 @@ class About extends Component {
                     {card.icon === 'type5' && <DeleteCircleIcon/>}
                     {card.icon === 'type6' && <FindInPageIcon/>}
                   </div>
-                  <h3 className="ad-card-about_title">{card.title}</h3>
+                  <h3 className="ad-about_card_title">{card.title}</h3>
                   <div>{card.description}</div>
                 </div>
               )

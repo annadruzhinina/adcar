@@ -3,6 +3,8 @@
 
 .ad-info {
   padding: $space-base;
+  background-color: $color-primary;
+  font-size: $font-size-large;
 
   &_img {
     min-height: 360px;
@@ -33,7 +35,7 @@
       }
 
       &_content {
-        padding: 0 $space-base-double;
+        padding: 0 $space-base-triple;
         flex: 1;
       }
     }

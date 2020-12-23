@@ -1,0 +1,59 @@
+@import "../variables/variables";
+
+.ad-services {
+  background-color: $color-grey-light;
+
+  // For desktop and tablets.
+  @media (min-width: $screen-xs) {
+    & {
+      &_grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: -$space-base;
+      }
+    }
+  }
+
+  // Card.
+  &_card {
+    padding: $space-base;
+    margin: $space-base;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $card-box-shadow;
+    background-color: $color-white;
+    border-radius: $border-radius-base;
+    flex: 1;
+
+    // For desktop and tablets.
+    @media (min-width: $screen-xs) {
+      & {
+        padding: $space-base-double;
+      }
+    }
+
+    &-head {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-body {
+      flex: 1;
+      line-height: 1.5;
+    }
+
+    &-title {
+      font-family: $card-font-family;
+      font-size: $card-font-size;
+      margin: $card-title-spaces;
+      line-height: 1.2;
+    }
+
+    &-actions {
+      padding-top: $space-base;
+    }
+  }
+}
+

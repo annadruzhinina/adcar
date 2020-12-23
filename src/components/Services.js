@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-import '../styles/components/card/card-services.scss';
-import '../styles/components/circle.scss';
+import '../styles/components/services.scss';
+import '../styles/components/icon-circle.scss';
 import '../styles/section.scss'
 
 import {SERVICES_CONTENT} from "../core/constants";
@@ -24,22 +24,22 @@ class Services extends Component {
   render() {
 
     return (
-      <section className="ad-section ad-section--grey">
+      <section className="ad-section ad-services">
         <div className="ad-section_container">
-          <div className="ad-card-services_grid">
+          <div className="ad-services_grid">
             {this.state.data.map((item, index) => {
               return (
-                <div className="ad-card-services" key={index}>
-                  <div className="ad-card-services_head">
+                <div className="ad-services_card" key={index}>
+                  <div className="ad-services_card-head">
                     {item.type === 'notify' && <div className="ad-circle--green"><SearchIcon/></div>}
                     {item.type === 'msq' && <div className="ad-circle--yellow"><DownloadIcon/></div>}
                     {item.type === 'advertise' && <div className="ad-circle--red"><AlertIcon/></div>}
                   </div>
-                  <div className="ad-card-services_body">
-                    <h4 className="ad-card-services_title">{item.title}</h4>
+                  <div className="ad-services_card-body">
+                    <h4 className="ad-services_card-title">{item.title}</h4>
                     <p>{item.description}</p>
                   </div>
-                  <div className="ad-card-services_actions">
+                  <div className="ad-services_card-actions">
                     <Button text={item.buttonText} btnType={'round'}/>
                   </div>
                 </div>

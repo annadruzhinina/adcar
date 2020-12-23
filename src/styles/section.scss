@@ -15,10 +15,6 @@
     font-size: $font-size-large;
   }
 
-  &--grey {
-    background-color: $color-grey-light;
-  }
-
   &_container {
     @include container;
   }

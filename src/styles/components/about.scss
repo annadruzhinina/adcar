@@ -1,0 +1,46 @@
+@import "../variables/variables";
+
+.ad-about {
+  text-align: center;
+
+  // For desktop.
+  @media (min-width: $screen-xs) {
+    & {
+      &_grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+
+  // Card.
+  &_card {
+    padding: $space-base;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    // For desktop.
+    @media (min-width: $screen-xs) {
+      & {
+        max-width: $about-card-width;
+      }
+    }
+
+    &-icon {
+      svg {
+        height: $about-card-icon-size;
+        width: $about-card-icon-size;
+        color: $about-card-icon;
+      }
+
+    }
+
+    &_title {
+      margin: $space-base-half 0;
+      font-family: $font-roboto-bold;
+      line-height: 1.2;
+    }
+  }
+}
