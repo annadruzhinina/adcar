@@ -4,7 +4,6 @@
 * Fonts.
 */
 $font-roboto-bold: 'Roboto-Bold', Arial, sans-serif;
-$font-roboto-medium: 'Roboto-Medium', Arial, sans-serif;
 $font-roboto-regular: 'Roboto-Regular', Arial, sans-serif;
 $font-roboto-light: 'Roboto-Light', Arial, sans-serif;
 
@@ -26,32 +25,29 @@ $space-base-triple: $space-base*3;
 * Fonts.
 */
 $font-size-largest: 42px;
-$font-size-larger: 24px;
-$font-size-large: 22px;
-$font-size-base: 18px;
+$font-size-large: 20px;
+$font-size-base: 16px;
 $font-size-small: 12px;
 
 /*
 * Cards.
 */
 $card-font-family: $font-roboto-bold;
-$card-font-size: $font-size-larger;
-$card-title-spaces: $space-base-half 0 $space-base;
+$card-font-size: $font-size-large;
+$card-title-spaces: $space-base 0;
 
 /*
 * Circle.
 */
-$circle-size: 80px;
-$circle-icon-size: 36px;
+$circle-size: 64px;
+$circle-icon-size: 26px;
 
 /*
 * Typography.
 */
-$h4-font-family: $font-roboto-bold;
-$h4-font-size: $font-size-large;
-
 $h3-font-family: $font-roboto-bold;
 $h3-font-size: $font-size-largest;
+$h3-font-spaces: 0 0 $space-base;
 
 /*
 * Body.
@@ -63,16 +59,14 @@ $body-line-height: 1.4;
 /*
 * Button.
 */
-$btn-height: 60px;
+$btn-height: 54px;
 $btn-font-size: $font-size-base;
 
 /*
 * Section.
 */
-$section-spaces: 150px $space-base;
-$section-spaces-mob: $space-base-double $space-base;
-$section-title-font-family: $h3-font-family;
-$section-title-font-size: $h3-font-size;
+$section-spaces: 120px 0;
+$section-spaces-mob: $space-base-double 0;
 
 /*
 * Footer.
@@ -86,6 +80,18 @@ $footer-head: 120px;
 $transition-base: .27s ease-in-out;
 
 /*
-* Shadow.
+* Border Radius.
 */
-$shadow-base: 6px;
+$border-radius-base: 2px;
+
+/*
+* Scrollbar.
+*/
+$scrollbar-size: 8px;
+
+/*
+* About.
+*/
+$about-card-width: 380px;
+$about-card-icon-size: 40px;
+

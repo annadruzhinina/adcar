@@ -1,0 +1,10 @@
+@import '../variables/variables';
+
+@mixin head($type) {
+  @if $type == 'h3' {
+    font-family: $h3-font-family;
+    font-size: $h3-font-size;
+    margin: $h3-font-spaces;
+
+  }
+}

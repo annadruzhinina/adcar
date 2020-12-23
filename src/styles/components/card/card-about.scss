@@ -8,20 +8,22 @@
 
   // For desktop.
   @media (min-width: $screen-xs) {
-    flex-basis: 30%;
-    min-width: 300px;
+    & {
+      max-width: $about-card-width;
 
-    &_grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      &_grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
   }
 
   &_icon {
     svg {
-      height: 48px;
-      width: 48px;
+      height: $about-card-icon-size;
+      width: $about-card-icon-size;
+      color: $about-card-icon;
     }
 
   }
@@ -34,10 +36,5 @@
     margin: $space-base-half 0;
     font-family: $font-roboto-bold;
     line-height: 1.2;
-  }
-
-  &_subtitle {
-    margin-bottom: $space-base*3;
-    font-size: $font-size-larger;
   }
 }

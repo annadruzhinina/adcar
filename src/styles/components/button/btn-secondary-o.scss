@@ -1,0 +1,7 @@
+@import "mixin-btn-variant";
+
+
+.ad-btn--secondary-o {
+  @include btn-variant($btn-secondary-o-bg, $btn-secondary-o-txt, $btn-secondary-o-bg-action, $btn-secondary-o-txt-action);
+  border: $btn-secondary-o-border;
+}

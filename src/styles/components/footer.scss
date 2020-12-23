@@ -23,6 +23,10 @@
       height: $footer-social-icon-size;
       width: $footer-social-icon-size;
       margin: $space-base-half;
+
+      &:hover {
+        color: $color-primary-dark;
+      }
     }
   }
 

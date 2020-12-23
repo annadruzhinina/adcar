@@ -1,10 +1,11 @@
 $color-primary: #ffea00;
+$color-primary-dark: #f29b00;
 $color-black: #222;
+$color-grey-dark: #848484;
 $color-grey: #e0e0e0;
 $color-grey-light: #f2f3f7;
 $color-white: #fff;
 $color-green: #389d83;
-$color-yellow: #f29b00;
 $color-red: #e35634;
 
 /*
@@ -15,11 +16,11 @@ $card-box-shadow: 0 1px 24px 0 rgba(0,0,0,.04);
 /*
 * Buttons.
 */
-$btn-round-bg: $color-white;
-$btn-round-txt: $color-black;
-$btn-round-bg-action: $color-black;
-$btn-round-txt-action: $color-white;
-$btn-round-border: 2px solid $color-black;
+$btn-secondary-o-bg: $color-white;
+$btn-secondary-o-txt: $color-black;
+$btn-secondary-o-bg-action: $color-black;
+$btn-secondary-o-txt-action: $color-white;
+$btn-secondary-o-border: 2px solid $color-black;
 
 $btn-secondary-bg: $color-grey;
 $btn-secondary-txt: $color-black;
@@ -37,3 +38,12 @@ $btn-primary-txt-action: $color-black;
 $footer-bg: $color-black;
 $footer-txt: $color-white;
 
+/*
+ * Scrollbar.
+ */
+$scrollbar-bg: $color-primary-dark;
+
+/*
+* About.
+*/
+$about-card-icon: $color-primary-dark;

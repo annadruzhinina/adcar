@@ -1,13 +1,18 @@
 @import "./variables/variables";
 @import "./mixins/mixin-container";
-
+@import "./mixins/mixin-head";
 
 .ad-section {
   padding: $section-spaces-mob;
 
   &_title {
-    font-family: $section-title-font-family;
-    font-size: $section-title-font-size;
+    @include head('h3')
+  }
+
+  &_subtitle {
+    color: $color-grey-dark;
+    margin-bottom: $space-base-double;
+    font-size: $font-size-large;
   }
 
   &--grey {

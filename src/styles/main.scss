@@ -1,7 +1,28 @@
 @import "./variables/variables.scss";
 
+::-webkit-scrollbar {
+  width: $scrollbar-size;
+  height: $scrollbar-size;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $scrollbar-bg;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 body {
   font-family: $body-font-family;
   font-size: $body-font-size;
   line-height: $body-line-height;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+a {
+  &:hover {
+    color: $color-primary-dark;
+  }
 }

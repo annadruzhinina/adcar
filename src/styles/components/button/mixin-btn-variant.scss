@@ -8,12 +8,13 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: unset;
   padding: $space-base-half $space-base-double;
   background-color: $background;
+  border-radius: $border-radius-base;
   color: $color;
   white-space: nowrap;
   cursor: pointer;
+  border: unset;
 
   &:hover,
   &:active,
