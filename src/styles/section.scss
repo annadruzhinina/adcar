@@ -1,0 +1,25 @@
+@import "./variables/variables";
+@import "./mixins/mixin-container";
+
+
+.ad-section {
+  padding: $section-spaces-mob;
+
+  &_title {
+    font-family: $section-title-font-family;
+    font-size: $section-title-font-size;
+  }
+
+  &--grey {
+    background-color: $color-grey-light;
+  }
+
+  &_container {
+    @include container;
+  }
+
+  // For desktop and tablets.
+  @media (min-width: $screen-xs) {
+    padding: $section-spaces;
+  }
+}

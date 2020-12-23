@@ -1,0 +1,39 @@
+$color-primary: #ffea00;
+$color-black: #222;
+$color-grey: #e0e0e0;
+$color-grey-light: #f2f3f7;
+$color-white: #fff;
+$color-green: #389d83;
+$color-yellow: #f29b00;
+$color-red: #e35634;
+
+/*
+* Cards.
+*/
+$card-box-shadow: 0 1px 24px 0 rgba(0,0,0,.04);
+
+/*
+* Buttons.
+*/
+$btn-round-bg: $color-white;
+$btn-round-txt: $color-black;
+$btn-round-bg-action: $color-black;
+$btn-round-txt-action: $color-white;
+$btn-round-border: 2px solid $color-black;
+
+$btn-secondary-bg: $color-grey;
+$btn-secondary-txt: $color-black;
+$btn-secondary-bg-action: darken($color-grey, 10);
+$btn-secondary-txt-action: $color-black;
+
+$btn-primary-bg: $color-primary;
+$btn-primary-txt: $color-black;
+$btn-primary-bg-action: darken($color-primary, 10);
+$btn-primary-txt-action: $color-black;
+
+/*
+* Footer.
+*/
+$footer-bg: $color-black;
+$footer-txt: $color-white;
+

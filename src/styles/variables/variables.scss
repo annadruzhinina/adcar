@@ -1,0 +1,91 @@
+@import 'variables-color';
+
+/*
+* Fonts.
+*/
+$font-roboto-bold: 'Roboto-Bold', Arial, sans-serif;
+$font-roboto-medium: 'Roboto-Medium', Arial, sans-serif;
+$font-roboto-regular: 'Roboto-Regular', Arial, sans-serif;
+$font-roboto-light: 'Roboto-Light', Arial, sans-serif;
+
+/*
+* Screens.
+*/
+$screen-xs: 460px;
+$screen-md: 680px;
+
+/*
+* Spaces.
+*/
+$space-base: 18px;
+$space-base-half: $space-base/2;
+$space-base-double: $space-base*2;
+$space-base-triple: $space-base*3;
+
+/*
+* Fonts.
+*/
+$font-size-largest: 42px;
+$font-size-larger: 24px;
+$font-size-large: 22px;
+$font-size-base: 18px;
+$font-size-small: 12px;
+
+/*
+* Cards.
+*/
+$card-font-family: $font-roboto-bold;
+$card-font-size: $font-size-larger;
+$card-title-spaces: $space-base-half 0 $space-base;
+
+/*
+* Circle.
+*/
+$circle-size: 80px;
+$circle-icon-size: 36px;
+
+/*
+* Typography.
+*/
+$h4-font-family: $font-roboto-bold;
+$h4-font-size: $font-size-large;
+
+$h3-font-family: $font-roboto-bold;
+$h3-font-size: $font-size-largest;
+
+/*
+* Body.
+*/
+$body-font-family: $font-roboto-light;
+$body-font-size: $font-size-base;
+$body-line-height: 1.4;
+
+/*
+* Button.
+*/
+$btn-height: 60px;
+$btn-font-size: $font-size-base;
+
+/*
+* Section.
+*/
+$section-spaces: 150px $space-base;
+$section-spaces-mob: $space-base-double $space-base;
+$section-title-font-family: $h3-font-family;
+$section-title-font-size: $h3-font-size;
+
+/*
+* Footer.
+*/
+$footer-social-icon-size: 28px;
+$footer-head: 120px;
+
+/*
+* Animations.
+*/
+$transition-base: .27s ease-in-out;
+
+/*
+* Shadow.
+*/
+$shadow-base: 6px;

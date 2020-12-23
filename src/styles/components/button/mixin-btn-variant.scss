@@ -1,0 +1,30 @@
+@import "../../variables/variables";
+
+@mixin btn-variant($background, $color, $background-action, $color-action) {
+  height: $btn-height;
+  font-family: $font-roboto-bold;
+  font-size: $btn-font-size;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: unset;
+  padding: $space-base-half $space-base-double;
+  background-color: $background;
+  color: $color;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $background-action;
+    color: $color-action;
+  }
+
+
+  // For mobile.
+  @media (max-width: $screen-xs) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,8 @@
+@import "mixin-btn-variant";
+
+
+.ad-btn--round {
+  @include btn-variant($btn-round-bg, $btn-round-txt, $btn-round-bg-action, $btn-round-txt-action);
+  border-radius: $btn-height/2;
+  border: $btn-round-border;
+}

@@ -1,0 +1,31 @@
+@import "../variables/variables";
+
+[class*="ad-circle--"] {
+  border-radius: 50%;
+  height: $circle-size;
+  width: $circle-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    color: $color-white;
+    height: $circle-icon-size;
+    width: $circle-icon-size;
+  }
+}
+
+.ad-circle {
+
+  &--green {
+    background-color: $color-green;
+  }
+
+  &--yellow {
+    background-color: $color-yellow
+  }
+
+  &--red {
+    background-color: $color-red;
+  }
+}

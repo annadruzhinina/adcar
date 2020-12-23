@@ -1,0 +1,43 @@
+@import "../../variables/variables";
+
+.ad-card-about {
+  padding: $space-base;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  // For desktop.
+  @media (min-width: $screen-xs) {
+    flex-basis: 30%;
+    min-width: 300px;
+
+    &_grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &_icon {
+    svg {
+      height: 48px;
+      width: 48px;
+    }
+
+  }
+
+  &_body {
+    flex: 1;
+  }
+
+  &_title {
+    margin: $space-base-half 0;
+    font-family: $font-roboto-bold;
+    line-height: 1.2;
+  }
+
+  &_subtitle {
+    margin-bottom: $space-base*3;
+    font-size: $font-size-larger;
+  }
+}

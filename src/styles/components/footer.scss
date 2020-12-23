@@ -1,0 +1,33 @@
+@import "../variables/variables";
+@import "../mixins/mixin-container";
+
+.ad-footer {
+  background-color: $footer-bg;
+  color: $footer-txt;
+  min-height: $footer-head;
+  display: flex;
+
+  &_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1;
+    @include container;
+  }
+
+  &_social {
+    margin: -$space-base-half;
+
+    svg {
+      color: $color-white;
+      height: $footer-social-icon-size;
+      width: $footer-social-icon-size;
+      margin: $space-base-half;
+    }
+  }
+
+  &_info {
+    flex: 1;
+    font-size: $font-size-small;
+  }
+}

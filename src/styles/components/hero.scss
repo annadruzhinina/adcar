@@ -1,0 +1,55 @@
+@import '../variables/variables';
+@import "../mixins/mixin-container";
+
+.ad-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  background-image: url("../../img/heroBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+
+  &_bg {
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  &_title {
+    font-size: calc(1.2rem + 3.3vw);
+    font-family: $font-roboto-bold;
+    line-height: 1;
+    margin: 0;
+  }
+
+  &_container {
+    color: $color-white;
+    align-items: center;
+    flex: 1;
+    @include container;
+    position: relative;
+  }
+
+  &_text {
+    opacity: .8;
+    padding: $space-base-double 0 $space-base*5 0;
+    font-size: $font-size-large;
+  }
+
+  &_actions {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -$space-base-half;
+
+    [class*='ad-btn--'] {
+      margin: $space-base-half;
+    }
+  }
+}

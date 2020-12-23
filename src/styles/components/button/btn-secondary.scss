@@ -1,0 +1,5 @@
+@import "mixin-btn-variant";
+
+.ad-btn--secondary {
+  @include btn-variant($btn-secondary-bg, $btn-secondary-txt, $btn-secondary-bg-action, $btn-secondary-txt-action)
+}
